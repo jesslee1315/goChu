@@ -1,0 +1,49 @@
+
+/*WHAT YOU GOT HEADING*/
+
+.show_us_heading{
+  margin-top: 4%;
+  margin-bottom: 3%;
+  /*border: 2px solid pink;*/
+  height: 50px;
+  width: 500px
+}
+
+#show_us_text{
+  font-family: source code pro;
+  letter-spacing: 12px;
+  padding: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold
+}
+
+/*WHAT YOU GOT HEADING ENDS*/
+
+
+
+/* HOMEPAGE CARDS */
+
+.show_us_cards{
+  margin-right: 5%;
+  background-color: transparent
+}
+
+.show_us_img{
+  height: 200px
+}
+
+.show_us_card_text{
+  font-family: source code pro;
+  letter-spacing: 5px;
+  font-size: 12px;
+  color: black
+}
+
+.tabs .tab a {
+  font-family: source code pro;
+  letter-spacing: 4px;
+  font-size: 10px;
+  color: black
+}
+/* HOMEPAGE CARDS ENDS */

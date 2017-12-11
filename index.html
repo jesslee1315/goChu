@@ -1,20 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="gochu">
 <head>
+  <meta charset="utf-8">
+    <title>GoChu Sauce</title>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css" type="text/css">
+  <link rel="stylesheet" href="css/home.css" type="text/css">
 </head>
 <body>
-  <h1>goChu</h1>
-  <p>Hello, world!</p>
 
+<!-- TOP NAV START -->
+  <nav>
+   <div class="nav-wrapper">
+     <a href="/#home" class="brand-logo center">
+       <img id="gochu_logo" src="img/gochu_logo.png">
+     </a>
+     <ul id="nav-mobile" class="col s12 m6 right hide-on-med-and-down">
+       <li><a class="nav-text" href="sass.html">Login</a></li>
+       <li><a class="nav-text" href="collapsible.html">Cart</a></li>
+     </ul>
+
+       <form class="col s12 m6 hide-on-small-only">
+         <div class="row right" id="search_bar" >
+           <div class="input-field col s6 m6 l12">
+             <input placeholder="search here" id="search_bar_text" type="text">
+           </div>
+         </div>
+       </form>
+   </div>
+
+ </nav>
+ <!-- TOP NAV ENDS -->
+
+
+<!-- SIDE NAV STARTS -->
+  <div class="row">
+    <!-- <div id="side-nav" class="col hide-on-small-only m3 l2"> -->
+    <div id="side-nav" class="col hide-on-small-only s12 m3 l2">
+      <ul class="section table-of-contents">
+        <li class="side-nav-text"><a href="#introduction">PRODUCTS</a></li>
+        <li class="side-nav-text"><a href="#structure">RECEPIES</a></li>
+        <li class="side-nav-text"><a href="#initialization">BLOG</a></li>
+        <li class="side-nav-text"><a href="#initialization">RETAILERS</a></li>
+      </ul>
+    </div>
+    
+    <!-- MIDDLE SLIDE IMAGE CONTENT -->
+        <div class="col s1 m1 l1" id="blank_space"></div>
+
+        <div class="carousel carousel-slider center col s9 m8 l9" data-indicators="true">
+          <a class="carousel-item" href="#one!"><img class="slideImg" src="img/samp2.jpg"></a>
+          <a class="carousel-item" href="#two!"><img class="slideImg" src="img/samp3.jpg"></a>
+          <a class="carousel-item" href="#three!"><img class="slideImg" src="img/samp1.jpg"></a>
+          <a class="carousel-item" href="#four!"><img class="slideImg" src="img/samp4.jpg"></a>
+        </div>
+    <!-- MIDDLE SLIDE IMAGE CONTENT ENDS -->
+
+      <!-- SIDE NAV ENDS -->
+
+  </div>
+<!-- ******************************************************************************************************** -->
+  <section>
+    <div ng-view></div>
+  </section>
+
+
+<!-- ******************************************************************************************************** -->
+
+
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+
+          <hr>
+            <h1 id="newsletter_heading" class="white-text center-align">NEWSLETTER</h1>
+            <h6 class="white-text center-align newsletter_text">do the right thing. stay informed</h6>
+
+            <form>
+              <div class="input-field center-align">
+                <div class="col s2"></div>
+                <input class="col s6" placeholder="email" id="newsletter_email_text" type="text">
+                <div class="col s1"></div>
+                <button class="btn waves-effect waves-light transparent subscribe_butt col s2"
+                type="submit" name="action">Submit</button>
+                <div class="col s1"></div>
+               </div>
+            </form>
+
+          <hr>
+
+          <h1 class="footerTab_text col s3"><a href="#test8">our mission</a></h1>
+          <h1 class="footerTab_text col s3"><a href="#test8">about us</a></h1>
+          <h1 class="footerTab_text col s3"><a href="#test8">contact us</a></h1>
+          <h1 class="footerTab_text col s3"><a href="#test8">privacy & terms</a></h1>
+
+          <div class="col s12 empty_space"></div>
+
+          <div class="col s4"></div>
+          <h1 class="copywrite col s4">GO CHU 2017. ALL RIGHTS RESERVED</h1>
+          <div class="col s5"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body>
   <!-- JAVASCRIPT -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-</body>
+  <script src="app.js" charset="utf-8"></script>
+  <script src="controllers/layoutsController.js" charset="utf-8"></script>
+  <script src="controllers/homeController.js" charset="utf-8"></script>
 </html>
